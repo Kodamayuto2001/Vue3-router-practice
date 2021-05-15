@@ -1,7 +1,8 @@
 import { createWebHistory,createRouter } from "vue-router";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
-import User from "@/views/User.vue"
+// import User from "@/views/User.vue";
+import NotFound from "@/views/NotFound.vue"
 
 const routes = [
     {
@@ -14,10 +15,16 @@ const routes = [
         name: "About",
         component: About,
     },
+    // 動的セグメント
+    // {
+    //     path: "/:name",
+    //     name: "User",
+    //     component: User,
+    //     props: true,
+    // },
     {
-        path: "/:name",
-        name: "User",
-        component: User
+        path: "/:catchAll(.*)",
+        component: NotFound,
     },
 ];
 

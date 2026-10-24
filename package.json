@@ -12,6 +12,12 @@
     "vue": "^3.0.0",
     "vue-router": "^4.0.8"
   },
+  "overrides": {
+    "html-webpack-plugin@3.2.0": {
+      "loader-utils": "1.4.2"
+    },
+    "webpack-bundle-analyzer": "4.10.2"
+  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
